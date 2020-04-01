@@ -9,7 +9,7 @@
 
 var creaNumeri =0;
 
-console.log("Ecco a voi una delle più belle noti musicali")
+console.log("Ecco a voi una delle più belle note musicali")
 for( var i = 0; i < 100 ; i++){
   creaNumeri++;
   if ((creaNumeri % 3 == 0) && (creaNumeri % 5 != 0)){
