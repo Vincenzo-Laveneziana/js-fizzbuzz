@@ -19,22 +19,22 @@ for( var i = 0; i < 100 ; i++){
 
   if ((creaNumeri % 3 == 0) && (creaNumeri % 5 != 0)){
 
-    creaNumeri = "BOBOBOBOBO";
+    creaNumeri = "LALALALALALA----------" + "(Fizz)" + n;
     console.log("Fizz      "+ n);
 
   } else if ((creaNumeri % 5 == 0) && (creaNumeri % 3 != 0)){
    
-    creaNumeri = "POPOPOPOPO";
+    creaNumeri = "POPOPOPOPO--------------" + "(Buzz)" + n;
     console.log("Buzz      " + n );
 
     //i multipli di 5
   } else if ((creaNumeri % 3 == 0) && (creaNumeri % 5 == 0)){
 
-    creaNumeri = "EEEEMMMMBBBB";
+    creaNumeri = "EEEEMMMMBBBB--" + "(FizzBuzz)" + n;
     console.log("FizzBuzz  " + n);
     // i numeri che sono sia multipli di 3 che di 5
   } else {
-    creaNumeri = "LALALALALALA";
+    creaNumeri = "BOBOBOBOBO------" + "(Rimanenti)" + n;
     console.log("Rimanenti " + n);
     //i rimanenti
   }
