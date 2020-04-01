@@ -8,26 +8,37 @@
 */ 
 
 var creaNumeri =0;
-
-console.log("Ecco a voi una delle più belle note musicali")
+var list = document.getElementById("list");
+var elementi ="";
+var n = 0;
+//console.log("Ecco a voi una delle più belle note musicali")
 for( var i = 0; i < 100 ; i++){
-  creaNumeri++;
+  n++;
+  creaNumeri = i+ 1;
+
   if ((creaNumeri % 3 == 0) && (creaNumeri % 5 != 0)){
 
-    console.log("Fizz     " + creaNumeri);
-    //i multipli di 3
-  } else if ((creaNumeri % 5 == 0) && (creaNumeri % 3 != 0)){
+    creaNumeri = "BOBOBOBOBO";
+    console.log("Fizz      "+ n);
 
-    console.log("Buzz     " + creaNumeri);
+  } else if ((creaNumeri % 5 == 0) && (creaNumeri % 3 != 0)){
+   
+    creaNumeri = "POPOPOPOPO";
+    console.log("Buzz      " + n );
+
     //i multipli di 5
   } else if ((creaNumeri % 3 == 0) && (creaNumeri % 5 == 0)){
 
-    console.log("FizzBuzz " + creaNumeri);
+    creaNumeri = "EEEEMMMMBBBB";
+    console.log("FizzBuzz  " + n);
     // i numeri che sono sia multipli di 3 che di 5
   } else {
-
-    console.log("Tuzciah  " + creaNumeri);
+    creaNumeri = "LALALALALALA";
+    console.log("Rimanenti " + n);
     //i rimanenti
   }
 
+  elementi +="<li>" + creaNumeri + "</li>";
+  
 }//fine ciclo for
+list.innerHTML= elementi;
